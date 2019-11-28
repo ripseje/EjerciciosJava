@@ -37,6 +37,13 @@ public class EjerciciosBasicos {
        return 2; //el resto de casos que son más de 80
     }
     
+    public boolean muyVanidoso (int numero, boolean multiplo){
+        if(numero % 11 == 0){
+            return true;
+        }
+        return false;
+    }
+    
     /**
      * @param args the command line arguments
      */
@@ -54,6 +61,14 @@ public class EjerciciosBasicos {
         System.out.println(ejercicios.multa(80, true));
         System.out.println(ejercicios.multa(85, true));
         System.out.println(ejercicios.multa(85, false));
+        //test ejercicio 3
+        System.out.println(ejercicios.muyVanidoso(10, true));
+        System.out.println(ejercicios.muyVanidoso(11, true));
+        System.out.println(ejercicios.muyVanidoso(12, true));
+        System.out.println(ejercicios.muyVanidoso(20, true));
+        System.out.println(ejercicios.muyVanidoso(21, true));
+        System.out.println(ejercicios.muyVanidoso(22, true));
+        System.out.println(ejercicios.muyVanidoso(33, true));
     }
     
 }
